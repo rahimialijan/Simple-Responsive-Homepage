@@ -66,6 +66,10 @@ h4{
 .leading{
     font-size: 1.1em;
 }
+.welcome-text p{
+    text-align: left;
+}
+
 
 /*mobile style*/
 .grid{
@@ -90,6 +94,7 @@ h4{
 }
 .welcome-text{
     grid-column: 1/6;
+    
 }
 .welcome-img{
     grid-column: 6/9;
@@ -116,7 +121,7 @@ h4{
     margin:0 20px;
     display: flex;
 }
-.projects *{
+.projects a *{
     align-self: center;
     margin: 0 20px;
     max-width: 40%;
@@ -192,28 +197,42 @@ footer img{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*small tablet style*/
 @media screen and (min-width:620px){
-
+    .welcome-text{
+        grid-column: 1/5;
+    }
+    .welcome-img{
+        grid-column: 7/9;
+    }
+    .welcome-img img{
+        width: 100%;
+    }  
+    .projects{
+        margin-top: 20px;
+    }
+    .projects a{
+        grid-column: span 4;
+        display: block;
+        margin: 20px 0;
+    }
+    .projects a:last-child{
+        grid-column: 3/7;  
+    }
+    .projects a *{
+        margin: 10px;
+        max-width: 60%;
+        margin: 10px 20px;
+    }
+    .projects h4{
+        text-align: center;
+    }
+    #skills{
+        padding: 30px 100px;
+    }
+    footer{
+        background-size: 20%
+    };
 }
 
 /*large tablets and laptop styles*/
