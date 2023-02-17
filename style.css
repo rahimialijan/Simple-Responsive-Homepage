@@ -237,7 +237,39 @@ footer img{
 
 /*large tablets and laptop styles*/
 @media screen and (min-width:960px){
-
+    body{
+        font-size: 18px;
+    }
+    .grid{
+        width: 100%;
+        max-width: 1060px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .leading{
+        margin: 20px 0;
+    }
+    .site-nav{
+        padding: 0 20px;
+    }
+    .site-nav h1{
+        grid-column: 1/3;
+    }
+    .site-nav ul{
+        display: flex;
+        grid-column: 6/9;
+        justify-content: flex-end;
+        align-self: center;
+    }
+    .site-nav li{
+        margin-left: 20px;
+    }
+    .welcome-text{
+        align-self: center;
+    }
+    #welcome{
+        padding-bottom: 40px;
+    }
 }
 
 /*desktop styles*/
