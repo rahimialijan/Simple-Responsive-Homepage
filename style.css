@@ -123,6 +123,7 @@ h4{
 }
 .projects h4{
     color: #9994f7;
+   white-space: nowrap;
 }
 #skills{
     padding: 30px 20px;
@@ -189,9 +190,6 @@ footer li{
 footer img{
     width: 20px;
 }
-
-
-
 
 
 
